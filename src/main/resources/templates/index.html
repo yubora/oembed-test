@@ -82,7 +82,10 @@
                 </tr>
                 <tr th:if="${response.html}">
                     <td>html</td>
-                    <td th:text="${response.html}"></td>
+                    <td>
+                        <p th:text="${response.html}"></p>
+                        <div th:utext="${response.html}"></div>
+                    </td>
                 </tr>
                 <tr th:if="${response.duration}">
                     <td>duration</td>
@@ -110,10 +113,7 @@
                 </tr>
                 <tr th:if="${response.thumbnailUrlWithPlayButton}">
                     <td>thumbnail_url_with_play_button</td>
-                    <td>
-                        <p th:text="${response.thumbnailUrlWithPlayButton}"></p>
-                        <img th:src="${response.thumbnailUrlWithPlayButton}"/>
-                    </td>
+                    <td th:text="${response.thumbnailUrlWithPlayButton}"></td>
                 </tr>
                 <tr th:if="${response.uploadDate}">
                     <td>upload_date</td>
