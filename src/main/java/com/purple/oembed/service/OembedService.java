@@ -30,7 +30,6 @@ public class OembedService {
                     || e.getClass() == IllegalArgumentException.class) {
 
                 error = ErrorResponse.builder()
-                        .code(HttpStatusCode.valueOf(403).toString())
                         .message("잘못된 접근입니다. URL을 확인해주세요.")
                         .build();
             }
