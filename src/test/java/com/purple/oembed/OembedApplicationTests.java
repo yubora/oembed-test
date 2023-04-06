@@ -1,10 +1,10 @@
-package com.purple.oembed2;
+package com.purple.oembed;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Oembed2ApplicationTests {
+class OembedApplicationTests {
 
     @Test
     void contextLoads() {
